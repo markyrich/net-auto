@@ -16,6 +16,8 @@ interface Ethernet1
 interface Ethernet2
 !
 interface Ethernet3
+desc test
+
 !
 interface Loopback0
    ip address 10.118.0.1/32
