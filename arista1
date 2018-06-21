@@ -1,0 +1,21 @@
+transceiver qsfp default-mode 4x10G
+!
+hostname arista1
+!
+spanning-tree mode mstp
+!
+no aaa root
+!
+username cisco privilege 15 secret 5 $1$SSTaPG6Q$jqHTERGWvwXXdN0JJAel31
+!
+interface Ethernet1
+   no switchport
+   ip address 10.118.255.1/30
+   ip ospf network point-to-point
+!
+interface Ethernet2
+!
+interface Ethernet3
+!
+interface Loopback0
+   ip address 10.118.0.1/32
