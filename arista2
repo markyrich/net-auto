@@ -1,0 +1,23 @@
+! Command: show running-config
+! device: arista2 (vEOS, EOS-4.16.13M)
+!
+! boot system flash:/vEOS-lab.swi
+!
+transceiver qsfp default-mode 4x10G
+!
+hostname arista2
+!
+spanning-tree mode mstp
+!
+no aaa root
+!
+username cisco privilege 15 secret 5 $1$SSTaPG6Q$jqHTERGWvwXXdN0JJAel31
+!
+interface Ethernet1
+   no switchport
+   ip address 10.118.255.2/30
+   ip ospf network point-to-point
+!
+
+
+
