@@ -1,0 +1,2 @@
+2 Arista switches running in Virtualbox
+1 Linux VM with bridged interface for external access and internal interface to access Arista management interfaces
